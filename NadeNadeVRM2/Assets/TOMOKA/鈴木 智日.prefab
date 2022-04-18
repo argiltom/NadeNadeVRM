@@ -5835,6 +5835,9 @@ MonoBehaviour:
   - responseVoice: {fileID: 8300000, guid: 00fdda678296642439c7b82a2e75ca2b, type: 3}
     triggerStrings:
     - "\u3059\u3054\u3044\u306D"
+  - responseVoice: {fileID: 8300000, guid: 1a925174e1f37e2448b76672c21599c0, type: 3}
+    triggerStrings:
+    - "\u304A\u75B2\u308C\u3055\u307E"
 --- !u!1 &8563479236072627196
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,27 +23,45 @@ public class VoiceGetter : MonoBehaviour
     bool isActive;
     [SerializeField] bool isReporting;
     [SerializeField] Text feedBackTo;
+    [SerializeField] Text feedBackExceptionText;
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
-        speechConfig = SpeechConfig.FromSubscription(key, location);
-        speechConfig.SpeechRecognitionLanguage = "ja-JP";//日本語に変更
-        audioConfig = AudioConfig.FromDefaultMicrophoneInput();
-        speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
+        try
+        {
+            instance = this;
+            speechConfig = SpeechConfig.FromSubscription(key, location);
+            speechConfig.SpeechRecognitionLanguage = "ja-JP";//日本語に変更
+            audioConfig = AudioConfig.FromDefaultMicrophoneInput();
+            speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
+            feedBackExceptionText.text += audioConfig.ToString()+"\n";
+        }
+        catch(System.Exception ex)
+        {
+            feedBackExceptionText.text += ex.StackTrace.ToString()+"\n";
+            Debug.LogException(ex);
+        }
+        
     }
 
     // Update is called once per frame
     async void Update()
     {
-        if (isReporting)
+        try
         {
-            Debug.Log("latestVoice:"+latestVoiceStr+"\nelapsedTimeOfInput=" + elapsedTimeOfInput);
-            if(feedBackTo != null) feedBackTo.text = latestVoiceStr;
+            if (isReporting)
+            {
+                Debug.Log("latestVoice:" + latestVoiceStr + "\nelapsedTimeOfInput=" + elapsedTimeOfInput);
+                if (feedBackTo != null) feedBackTo.text = latestVoiceStr;
+            }
+            elapsedTimeOfInput += Time.deltaTime;
+            await VoiceGetFunc();
         }
-        elapsedTimeOfInput += Time.deltaTime;
-        await VoiceGetFunc();
-        
+        catch (System.Exception ex)
+        {
+            feedBackExceptionText.text += ex.StackTrace.ToString() + "\n";
+            Debug.LogException(ex);
+        }
     }
     Task VoiceGetFunc()
     {
