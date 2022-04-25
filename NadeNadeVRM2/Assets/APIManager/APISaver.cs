@@ -6,11 +6,11 @@ using UnityEngine;
 /// </summary>
 public class APISaver : MonoBehaviour
 {
-    [SerializeField] List<APIKey> saveAPIKeys;
+    [SerializeField] List<APIKeyJsonUnit> saveAPIKeys;
     // Start is called before the first frame update
     void Start()
     {
-        JsonReadWriter.WriteData(saveAPIKeys, "APIKeys");
+        JsonReadWriter.WriteData(new APIKeys(saveAPIKeys), "APIKeys");
     }
 
     // Update is called once per frame
