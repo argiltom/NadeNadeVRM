@@ -40,7 +40,7 @@ public class APIManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        
+        InitAPIKeys(fileName);
     }
     public static string GetAPIKey(string apiName)
     {
@@ -57,7 +57,7 @@ public class APIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InitAPIKeys(fileName);
+        
         PrintToCosole();
     }
 
