@@ -5832,6 +5832,7 @@ MonoBehaviour:
   - responseVoice: {fileID: 8300000, guid: dcc9d13c6266b3c4393a604dd8ee5687, type: 3}
     triggerStrings:
     - "\u4E00\u7DD2\u306B\u5C45\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046"
+    - "\u4E00\u7DD2\u306B\u3044\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046"
   - responseVoice: {fileID: 8300000, guid: 00fdda678296642439c7b82a2e75ca2b, type: 3}
     triggerStrings:
     - "\u3059\u3054\u3044\u306D"
