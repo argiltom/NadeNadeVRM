@@ -570,6 +570,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2499078037896152387, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
+      propertyPath: voiceCorresponceres.Array.data[8].triggerStrings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499078037896152387, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
+      propertyPath: voiceCorresponceres.Array.data[8].triggerStrings.Array.data[1]
+      value: "\u4E00\u7DD2\u306B\u5C45\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046"
+      objectReference: {fileID: 0}
     - target: {fileID: 3710939587474447087, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
       propertyPath: Target
       value: 
@@ -890,7 +898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6668693589859253625, guid: fb6cd2e6bacedbe4db03d9e1858cf5da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.38248026
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 6668693589859253625, guid: fb6cd2e6bacedbe4db03d9e1858cf5da, type: 3}
       propertyPath: m_LocalPosition.y
