@@ -12,7 +12,7 @@ public class VoiceGetter : MonoBehaviour
 {
     //このパッケージをインポート:https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstarts/setup-platform?pivots=programming-language-csharp&tabs=unity%2Cwindows%2Cjre%2Cbrowser
     //Azureのサービスを利用
-    private static string key;
+    private static string key="43519da934764c64991805042e031cd6";
     private static string location = "japaneast";
     public static string latestVoiceStr;
     public static float elapsedTimeOfInput;
@@ -29,7 +29,8 @@ public class VoiceGetter : MonoBehaviour
     {
         try
         {
-            key = APIManager.GetAPIKey("SpeechToText");
+            var internet = Application.internetReachability;//Android側でAPIを叩く許可を得るために、ここでNetwork関連の処理をはさむ(実際は何もしないけど)
+            //key = APIManager.GetAPIKey("SpeechToText");
             instance = this;
             speechConfig = SpeechConfig.FromSubscription(key, location);
             speechConfig.SpeechRecognitionLanguage = "ja-JP";//日本語に変更
