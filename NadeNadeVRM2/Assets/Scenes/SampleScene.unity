@@ -790,7 +790,7 @@ PrefabInstance:
       objectReference: {fileID: 2057820555}
     - target: {fileID: 6841650420866601403, guid: 1105d93b570352c42917ad139e4a8e23, type: 3}
       propertyPath: isReporting
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6841650420866601403, guid: 1105d93b570352c42917ad139e4a8e23, type: 3}
       propertyPath: feedBackExceptionText

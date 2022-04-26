@@ -14,7 +14,7 @@ public class JsonReadWriter
         StreamWriter writer;
         string jsonString = JsonUtility.ToJson(saveContent);
 
-        writer = new StreamWriter(Application.dataPath + "/" + saveFileName + ".json",false);
+        writer = new StreamWriter(Application.dataPath + "/"+"Resources"+"/" + saveFileName + ".json",false);
         writer.Write(jsonString);
         writer.Flush();
         writer.Close();
@@ -28,11 +28,11 @@ public class JsonReadWriter
     /// <returns></returns>
     public static T ReadData<T>(string fileName)
     {
-        if (File.Exists(Application.dataPath + "/" + fileName + ".json"))
+        if (File.Exists(Application.dataPath + "/" + "Resources"+"/"+ fileName + ".json"))
         {
             string dataString = "";
             StreamReader reader;
-            reader = new StreamReader(Application.dataPath + "/" + fileName + ".json");
+            reader = new StreamReader(Application.dataPath + "/" + "Resources" + "/" + fileName + ".json");
             dataString = reader.ReadToEnd();
             reader.Close();
             return JsonUtility.FromJson<T>(dataString);

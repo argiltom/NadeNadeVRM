@@ -7,7 +7,7 @@ public struct APIKeyJsonUnit
     public string apiName;
     public string apiKey;
 }
-//UnityでJSONで扱う際はListをオブジェクトでラッピングしないといけない
+//UnityでJSONで扱う際はListをクラスでラッピングしないといけない
 [System.Serializable]
 public struct APIKeys
 {
