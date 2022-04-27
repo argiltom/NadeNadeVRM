@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MaidTomoka.unity
+    guid: 55051d75aa8562b4d839e682625588b3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d5dd1f2e3296d9547a5524f7cf6704d1, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 61f46cd2ea0ae2145bd163cfe7689067, type: 2}

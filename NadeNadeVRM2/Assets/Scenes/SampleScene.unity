@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: d88d606dfaf9bee409b5a65053a9c5c9, type: 2}
 --- !u!1001 &35260839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -570,14 +570,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2499078037896152387, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
-      propertyPath: voiceCorresponceres.Array.data[8].triggerStrings.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499078037896152387, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
-      propertyPath: voiceCorresponceres.Array.data[8].triggerStrings.Array.data[1]
-      value: "\u4E00\u7DD2\u306B\u5C45\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046"
-      objectReference: {fileID: 0}
     - target: {fileID: 3710939587474447087, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
       propertyPath: Target
       value: 
@@ -630,6 +622,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4920094638757234014, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 35260840}
     - target: {fileID: 5509992355508542678, guid: 62f1de1c7663d1044987659a5fc1a8ee, type: 3}
       propertyPath: m_Name
       value: "\u9234\u6728 \u667A\u65E5"
@@ -823,7 +819,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1876338190
 BoxCollider:
