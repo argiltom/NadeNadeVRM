@@ -52,7 +52,7 @@ public class WalkToPlayer : MonoBehaviour
         {
             case Situation.Stop:
                 navMeshAgent.speed = 0;
-                navMeshAgent.acceleration = 0;
+                navMeshAgent.velocity = Vector3.zero;
                 vrmAnimControler.BaseAnimEnum = idleAnim;
                 break;
             case Situation.Walk:

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/tomokaWithForest.unity
+    guid: 72cb6049c6f212d4ca666a5268b63c54
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1

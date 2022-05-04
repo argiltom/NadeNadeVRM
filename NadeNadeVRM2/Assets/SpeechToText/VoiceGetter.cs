@@ -61,8 +61,12 @@ public class VoiceGetter : MonoBehaviour
         }
         catch (System.Exception ex)
         {
-            feedBackExceptionText.text += ex.StackTrace.ToString() + "\n";
-            Debug.LogException(ex);
+            if(feedBackExceptionText != null)
+            {
+                feedBackExceptionText.text += ex.StackTrace.ToString() + "\n";
+                Debug.LogException(ex);
+            }
+            
         }
     }
     Task VoiceGetFunc()

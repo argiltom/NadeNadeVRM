@@ -3829,7 +3829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeProxy: {fileID: 8722476801317708418}
   Neutral: 1
-  A: 0
+  A: 0.041
   I: 0
   U: 0
   E: 0
@@ -3838,7 +3838,7 @@ MonoBehaviour:
   Joy: 0
   Angry: 0
   Sorrow: 0
-  Fun: 0.105
+  Fun: 0.086
   LookUp: 0
   LookDown: 0
   LookLeft: 0
@@ -3916,7 +3916,7 @@ MonoBehaviour:
   idleAnim: 0
   navMeshAgent: {fileID: 3192415455841961692}
   target: {fileID: 0}
-  controllDistance: {x: 0.8, y: 5, z: 200}
+  controllDistance: {x: 2, y: 5, z: 200}
   walkSpeed: 2
   runSpeed: 4
 --- !u!1 &5603758460685342281
